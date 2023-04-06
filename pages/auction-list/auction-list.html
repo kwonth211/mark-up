@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+       
+ 
+        .auction-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+        }
+        .auction-item:last-child {
+            border-bottom: none;
+        }
+        .auction-item-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            flex-basis: 100%;
+        }
+        .auction-item-details {
+            font-size: 0.9em;
+            color: #777;
+            display: flex;
+            justify-content: space-between;
+            flex-basis: 100%;
+        }
+        .auction-item-bid {
+            background-color: #007bff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+    <title>Auction List UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="auction-item">
+            <div class="auction-item-title">오피스텔 A</div>
+            <div class="auction-item-details">
+                <span>서울시 강남구</span>
+                <span>오피스텔</span>
+                <span class="auction-item-bid">시작가: 5억</span>
+            </div>
+        </div>
+        <div class="auction-item">
+            <div class="auction-item-title">상가 B</div>
+            <div class="auction-item-details">
+                <span>서울시 서초구</span>
+                <span>상가</span>
+                <span class="auction-item-bid">시작가: 3억</span>
+            </div>
+        </div>
+        <div class="auction-item">
+            <div class="auction-item-title">빌딩 C</div>
+            <div class="auction-item-details">
+                <span>부산시 해운대구</span>
+                <span>빌딩</span>
+                <span class="auction-item-bid">시작가: 7억</span>
+            </div>
+        </div>
+  
+    </div>
+</body>
+</html>
+               

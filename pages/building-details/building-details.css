@@ -1,0 +1,45 @@
+/* building-detail.css */
+.building-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.building-image img {
+    width: 100%;
+    height: auto;
+}
+
+.building-info {
+    padding: 0 10px;
+}
+
+.building-info h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.building-type {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.value {
+    font-size: 16px;
+    color: gray;
+}
