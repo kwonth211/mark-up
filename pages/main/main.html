@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/common.css">
+
+    <title>Real Estate Game</title>
+    <style>
+  
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .header .cash-info {
+            display: flex;
+            gap: 10px;
+        }
+        .header .cash-info div {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #ddd;
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            /* height: calc(100vh - 100px); */
+            height: 500px;
+        }
+        .main .left-sidebar,
+        .main .right-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .main .left-sidebar button,
+        .main .right-sidebar button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+        .main .map {
+            flex-grow: 1;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .footer button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+        .timeline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+        }
+        .timeline .play-button {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="cash-info">
+            <div>재산: 0원</div>
+            <div>현금: 5000만원</div>
+            <div>캐시: 0</div>
+        </div>
+        <div class="timeline">
+            <div>Turn: 1</div>
+            <button class="play-button">Play</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left-sidebar">
+            <button>경매</button>
+            <button>분양</button>
+        </div>
+        <div class="map">지도</div>
+        <div class="right-sidebar">
+            <button>샵</button>
+            <button>랭킹</button>
+        </div>
+    </div>
+    <div class="footer">
+            <button>포트폴리오</button>
+            <button>대시보드</button>
+            <button>지도</button>
+            <button>은행</button>
+            <button>프로필</button>
+        </div>
+    </body>
+</html>
+    
