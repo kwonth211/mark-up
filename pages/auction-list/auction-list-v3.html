@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/common.css">
-   <style>
+	<title>부동산 경매 게임</title>
+	<style>
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #f2f2f2;
@@ -19,6 +16,27 @@
 			display: flex;
 			flex-direction: column;
 			align-items: stretch;
+		}
+		.filters {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: flex-end;
+			margin-bottom: 20px;
+		}
+		.filters label {
+			margin-right: 10px;
+			font-size: 16px;
+			color: #333;
+		}
+		.filters select {
+			padding: 5px 10px;
+			font-size: 16px;
+			color: #666;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			background-color: #fff;
+			cursor: pointer;
 		}
 		.property {
 			margin-bottom: 20px;
@@ -73,6 +91,7 @@
 		}
 		.property .status.closed {
 			background-color: #f44336;
+            
 			color: #fff;
 		}
 		.property .button-container {
@@ -83,30 +102,34 @@
 			position: absolute;
 			bottom: 20px;
 			right: 20px;
+
 		}
 		.property button {
 			margin-left: 20px;
 			padding: 10px 20px;
 			font-size: 20px;
-			font-weight: bold;
-			background-color: #4caf50;
-			color: #fff;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-		}
-		.property button:hover {
-			background-color: #388e3c;
-		}
-	</style>
-    <title>Auction List UI</title>
+			background-color: #ccc;
+
+        }
+        .property button:hover {
+            /* background-color: #ccc; */
+        }
+    </style>
 </head>
+
 <body>
 	<div class="container">
+		<div class="filters">
+			<label for="sort-select">경매 상태 정렬:</label>
+			<select id="sort-select">
+				<option value="all">전체</option>
+				<option value="ongoing">진행 중</option>
+				<option value="closed">종료됨</option>
+			</select>
+		</div>
 		<div class="property">
 			<div class="details">
-				<h3>부동산 1</h3>
+				<h3>블루스카이 아파트</h3>
 				<p>위치: 서울시 강남구 역삼동</p>
 				<p>건축년도: 2010년</p>
 				<p>층수: 지하 2층, 지상 20층</p>
@@ -120,11 +143,11 @@
 		</div>
 		<div class="property">
 			<div class="details">
-				<h3>부동산 2</h3>
-				<p>위치: 서울시 송파구 잠실동</p>
+				<h3>청담상가</h3>
+				<p>위치: 서울시 강남구 청담동</p>
 				<p>건축년도: 2005년</p>
-				<p>층수: 지하 1층, 지상 10층</p>
-				<div class="price">시작 가격: 20,000,000원</div>
+				<p>층수: 지하 1층, 지상 4층</p>
+				<div class="price">시작 가격: 5,000,000원</div>
 				<div class="time">경매 종료 시간: 2023-05-15 12:00</div>
 				<div class="status closed">경매 종료됨</div>
 			</div>
@@ -132,8 +155,38 @@
 				<button disabled>입찰 마감</button>
 			</div>
 		</div>
-		<!-- 추가적인 부동산 항목을 이어서 작성합니다. -->
-	</div>
+		<div class="property">
+			<div class="details">
+				<h3>타워팰리스 오피스텔</h3>
+				<p>위치: 서울시 영등포구 여의도동</p>
+				<p>건축년도: 2015년</p>
+				<p>층수: 지하 2층, 지상 30층</p>
+				<div class="price">시작 가격: 20,000,000원</div>
+                <div class="time">경매 종료 시간: 2023-06-01 10:00</div>
+                <div class="status">경매 진행 중</div>
+                             </div>
+            <div class="button-container">
+                <button>입찰하기</button>
+            </div>
+        </div>
+        <div class="property">
+            <div class="details">
+                <h3>포레스트타운 아파트</h3>
+                <p>위치: 서울시 강남구 역삼동</p>
+                <p>건축년도: 2010년</p>
+                <p>층수: 지하 2층, 지상 20층</p>
+                <div class="price">시작 가격: 10,000,000원</div>
+                <div class="time">경매 종료 시간: 2023-04-30 17:00</div>
+                <div class="status">경매 진행 중</div>
+            </div>
+            <div class="button-container">
+                <button>입찰하기</button>
+            </div>
+        </div>
+    </div>
 </body>
+
+
+
+
 </html>
-               
